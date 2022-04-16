@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 13%, rgba(148, 187, 233, 1) 94%); */
+ /*  background: rgb(211, 174, 238);
+  background: radial-gradient(circle, rgba(211, 174, 238, 1) 25%, rgba(9, 118, 246, 1) 94%); */
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.topheading{
+  text-align: center;
+  font-size: 5rem;
+  margin: 1.6rem;
+  color: #000080;
+  font-weight: 400;
+
+}
+
+.work{
+  
+  padding: 1rem;
+  background-color: #FF6347 ;
+  margin: 1rem;
+}
+
+.progress{
+   padding: 1rem;
+   background-color: #f4c430 ;
+   margin: 1rem;
+}
+
+.done{
+   
+   padding: 1rem;
+   background-color: #32de84;
+   margin: 1rem;
+}
+
+
+.workHeading{
+  text-align: center;
+  color:#B2FFFF;
+  /* background-color: #B2FFFF; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+.progressHeading{
+text-align: center;
+color: #B2FFFF;
+/* background-color: #6495ED ; */
+padding-top: 1rem;
+padding-bottom: 1rem;
+/* border: 1px solid  #EBEB91;
+border-radius: 25px; */
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: 0.2rem;
+}
+/* #00CED1 */
+.doneHeading{
+text-align: center;
+
+padding: 1rem;
+ color: #B2FFFF;
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: 0.2rem;
+
+
+}
+
+
+.selection{
+  display: flex;
+  justify-content: space-between;
+}
+
+.editselection{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*css for the divs in which data is present it is the inner div*/
+
+.insideWorkData{
+  background-color: #B2FFFF ;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #002244;
+  position: relative;
+  
+}
+
+.cross{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+
+.insideProgressData{
+  background-color: #B2FFFF;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #002244;
+  position: relative;
+}
+
+.insideDoneData{
+  background-color: #B2FFFF;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #002244;
+  position: relative;
+
+}
+
+.submitpost{
+  padding:2rem;
+}
+
+
+.formforpost{
+  padding: 1rem;
+  margin-top:1rem ;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* for data shown */
+
+.dataenterd{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 10fr 10fr 10fr 1fr;
+    grid-gap: 2rem;
+   
+  }
+  .work {
+    grid-column: 2/3;
+  }
+  .progress {
+    grid-column: 3/4;
+  }
+  
+  .done {
+    grid-column: 4/5;
+  }
+
+  
+}
+
